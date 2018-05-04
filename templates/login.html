@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>trasup: Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="apple-mobile-web-app-title" content="trasup">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#3e396b" />
+    <meta name="google" value="notranslate"/>
+    <meta name="author" content="afeorma, @afeorma"/>
+    <meta name="description" content="Learn to track the world, to avoid being traced"/>
+
+    <!-- Styles & Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="static/img/favicon.png">
+    <link rel="stylesheet" href="static/css/base-icons.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="static/js/libs.min.js"></script>
+    <!--[if (gte IE 6) & (lte IE 9)]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body class="trasupBody-Login">
+    <!-- home(trasupLogin) -->
+    <div class="trasupLogin">
+
+        <header class="trasupLogin-Header">
+            <div class="trasupLogin-Header--logo">
+                <div class="trasupLogin-Header--logo---Box">
+                    <span class="trasupLogin-Header--logo---L1">t:</span>
+                </div>
+                <span class="trasupLogin-Header--logo---L2">trasup</span>
+            </div>
+        </header>
+
+        <section class="trasupLogin-Wrapper">
+            <p class="trasupLogin-Wrapper--description">Control panel</p>
+            <p class="trasupLogin-Wrapper--explanation">People tracker on the Internet</p>
+
+            <!-- home(keyIcorrect) -->
+            <div class="trasupLogin-IncorrectKey">
+                <div class="trasupLogin-IncorrectKey--Icon"><span class="icon-times"></span></div>
+                <div class="trasupLogin-IncorrectKey--Text">Hey the key is incorrect, try again.</div> 
+            </div>
+            <!-- end(keyIcorrect) -->
+
+            <!-- home(form) -->
+            <div class="trasupLogin-Wrapper--Form">
+                <form class="trasupLogin-Wrapper--Form---Body" method="POST">
+                    <label class="trasupLogin-Wrapper--iconLabel icon-lock2"></label>
+                    <input type="password" class="trasupLogin-Wrapper--Form---input" placeholder="Enter the Access key" id="dataKey" name="key" required="true">
+                    <div class="trasupLogin-Wrapper--Form---buttonRightDefine">
+                        <button type="submit" class="trasupLogin-Wrapper--Form---button"><span class="trasupLogin-Wrapper--Form---button----text">Sign In</span> <small class="icon-chevron-right"></small></button>
+                    </div>
+                </form>
+                <div class="trasupLogin-Wrapper--Form---text">
+                    <span class="trasupLogin-Wrapper--Form---line">-</span>  Learn to track the world, to avoid being traced <span class="trasupLogin-Wrapper--Form---line">-</span>
+                </div>
+            </div>
+            <!-- end(form) -->
+
+
+
+            <!-- home(copyright) -->
+            <div class="trasupLogin-Copyright">
+                <span class="trasupLogin-Copyright--iconCode"></span> with <span class="trasupLogin-Copyright--iconLove"></span> by <a class="trasupLogin-Copyright--link" href="https://afeorma.com" title="afeorma: First Your Security"><img class="trasupLogin-Copyright--logo" width="90" src="static/img/afeorma-logo.svg" alt="afeorma"></a>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- end(trasupLogin) -->
+    <script src="static/js/login.js"></script>
+</body>
+</html>
